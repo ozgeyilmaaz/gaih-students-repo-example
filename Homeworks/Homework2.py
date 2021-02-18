@@ -27,7 +27,7 @@ for student in range(num_students):
 
     all_grades.append(grades)
     info[name] = grades
-    average = total / 3
+    average = format((total / 3), ".2f")
     average_list.append(average)
     average_dict[average] = name
 
