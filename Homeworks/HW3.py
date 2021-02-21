@@ -12,7 +12,10 @@ for number in range(1000):
     elif number == 500:
         print("Prime numbers from 500 to 1000:")
 
-    if number == 0 or number == 1 or number == 2:
+    if number == 0 or number == 1:
+        continue
+    elif number == 2:
+        prime_first(number)
         continue
     else:
         control = True
